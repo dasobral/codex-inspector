@@ -1,0 +1,6 @@
+{"type":"thread_started","session_id":"fixture_clean_success","synthetic":true,"prompt":"Refactor parser and add tests","model":"gpt-5-codex","approval_mode":"on-request","sandbox_mode":"workspace-write"}
+{"type":"turn_started","session_id":"fixture_clean_success","turn_id":"turn-1","actor":"assistant"}
+{"type":"assistant_message","session_id":"fixture_clean_success","turn_id":"turn-1","role":"assistant","content":"I will update the parser and run the focused tests."}
+{"type":"file_write","session_id":"fixture_clean_success","turn_id":"turn-1","path":"codex_inspector/normalizer.py","file_paths_written":["codex_inspector/normalizer.py"]}
+{"type":"exec_command","session_id":"fixture_clean_success","turn_id":"turn-1","command":"python -m pytest tests/test_normalizer.py","exit_code":0,"stdout":"3 passed","duration_ms":842}
+{"type":"turn_finished","session_id":"fixture_clean_success","turn_id":"turn-1","status":"completed"}

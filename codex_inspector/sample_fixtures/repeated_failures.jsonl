@@ -1,0 +1,8 @@
+{"type":"thread_started","session_id":"fixture_repeated_failures","synthetic":true,"prompt":"Fix importer tests","model":"gpt-5-codex","approval_mode":"on-request","sandbox_mode":"workspace-write"}
+{"type":"turn_started","session_id":"fixture_repeated_failures","turn_id":"turn-1","actor":"assistant"}
+{"type":"exec_command","session_id":"fixture_repeated_failures","turn_id":"turn-1","command":"python -m pytest tests/test_importer.py","exit_code":1,"stderr":"AssertionError: expected diagnostic event","duration_ms":913}
+{"type":"file_write","session_id":"fixture_repeated_failures","turn_id":"turn-1","path":"codex_inspector/importer.py","file_paths_written":["codex_inspector/importer.py"]}
+{"type":"exec_command","session_id":"fixture_repeated_failures","turn_id":"turn-1","command":"python -m pytest tests/test_importer.py","exit_code":1,"stderr":"AssertionError: malformed JSONL line was dropped","duration_ms":877}
+{"type":"file_write","session_id":"fixture_repeated_failures","turn_id":"turn-1","path":"codex_inspector/normalizer.py","file_paths_written":["codex_inspector/normalizer.py"]}
+{"type":"exec_command","session_id":"fixture_repeated_failures","turn_id":"turn-1","command":"python -m pytest tests/test_importer.py","exit_code":0,"stdout":"5 passed","duration_ms":761}
+{"type":"turn_finished","session_id":"fixture_repeated_failures","turn_id":"turn-1","status":"completed"}

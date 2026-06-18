@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "codex-run-inspector"
+version = "0.1.0"
+description = "Local observability and audit dashboard for OpenAI Codex CLI sessions."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Codex Run Inspector contributors" }]
+dependencies = []
+
+[project.optional-dependencies]
+dashboard = ["streamlit>=1.35"]
+
+[dependency-groups]
+dashboard = ["streamlit>=1.35"]
+
+[tool.uv]
+package = true
+
+[project.scripts]
+codex-inspector = "codex_inspector.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["codex_inspector*"]
+
+[tool.setuptools.package-data]
+codex_inspector = ["sample_fixtures/*.jsonl"]

@@ -1,0 +1,53 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*$py.class
+
+# --- Build / dist ---
+dist/
+build/
+*.egg
+*.egg-info/
+
+# --- Virtual environments ---
+.venv/
+venv/
+env/
+.env/
+
+# --- IDE / editors ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+.vs/
+
+# --- OS droppings ---
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# --- Project-specific ---
+
+# Local SQLite database and data directory (default: .codex-inspector/codex-inspector.sqlite)
+.codex-inspector/
+
+# Streamlit local config
+.streamlit/
+
+# Any local run output or transient data
+*.log
+
+# Coverage / test artifacts
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Non relevant docs
+docs/
+AGENTS.md
